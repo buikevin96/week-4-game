@@ -1,0 +1,58 @@
+#heading {
+	background-color: orange;
+	color: white;
+	font-size: 50px;
+	width: 420px;
+	height: 60px;
+	font-family: 'Pangolin', cursive;
+	text-align: center;
+
+}
+
+#instructions {
+	text-align: center;
+	background-color: peachpuff;
+	color: green;
+	line-height: 30px;
+	width: 420px;
+	height: 300px;
+	font-family: 'Pangolin', cursive;
+}
+
+#randomNumber {
+	background-color: #8FBC8F;
+	color: purple;
+	width: 300px;
+	height: 120px;
+	font-size: 40px;
+	font-family: 'Pangolin', cursive;
+
+}
+
+#scoreboard {
+	background-color: cyan;
+	width: 70px;
+	height: 120px;
+	font-family: 'Pangolin', cursive;
+
+}
+
+#scoreTitle {
+	background-color: teal;
+	color: white;
+	width: 300px;
+	height: 40px;
+	font-family: 'Pangolin', cursive;
+	font-size: 30px;
+
+}
+
+#score {
+	background-color: teal;
+	color: white;
+	width: 300px;
+	height: 120px;
+	font-family: 'Pangolin', cursive;
+	font-size: 40px;
+
+}

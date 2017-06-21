@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Crystals Collector Game </title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body background="assets/images/background.jpg">
+
+<div id="heading">
+	CrystalsCollector!
+</div>
+
+<br>
+
+<p id="instructions">
+	You will be given a random number at the start of the game.
+	<br>
+	There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+	<br>
+	You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+	<br>
+	The value of each crystal is hidden from you until you click on it.
+	<br>
+	Each time when the game starts, the game will change values of each crystal.
+</p>
+
+<br>
+
+<div id="randomNumber">
+	<span id="randNum">0</span>
+</div>
+
+<div id="scoreboard">
+	Wins: <span id="winsCounter">0</span>
+	Losses: 0 <span id ="lossesCounter">0</span>
+</div>
+
+<br>
+
+<div id="container">
+	<img src="assets/images/ruby.jpg" alt="ruby" width="15%" height="15%" />
+	<img src="assets/images/diamond.png" alt="diamond" width="15%" height="15%" />
+	<img src="assets/images/citrine.jpg" alt="citrine" width="15%" height="15%" />
+	<img src="assets/images/emerald.jpg" alt="emerald" width="15%" height="15%" />
+</div>
+
+<br>
+
+<div id="scoreTitle">
+	Your total score is:
+</div>
+
+<br>
+
+<div id="score">
+	<span id="totalScore">0</span>
+</div>
+
+<!--
+Background image
+10 separate divs
+	1. CrystalsCollector! Title Box (Static)
+	2. Instructions and rules div (Static)
+	3. random number generated div (Between #19-120)
+		- var randomNumber = 0;
+		- Math.floor(Math.random() * 102 + 19);
+	4. Scoreboard Wins: 0 and Losses: 0  div
+		-var Wins: 0;
+		-var Losses: 0;
+	5. Ruby image (or div?)
+		On click,
+		-Math.floor(Math.random() * 12 + 1);
+		add randNum to yourTotalscore
+	6. Diamond image (or div?)
+		On click
+		-Math.floor(Math.random() * 12 + 1);
+		add randNum to yourTotalScore
+	7. Gold image (or div?)
+		OnClick
+		-Math.floor(Math.random() * 12 + 1);
+		add randNum to your total score
+	8. Emerald image (or div?)
+		-Math.floor(Math.random() * 12 + 1);
+		add randNum to your totalScore
+	9. Your total score is: (div) (Static)
+	10. Score div
+		-Var yourTotalScore 
+	 if score = randomNum{
+		WinCount++
+		randomNum = []
+	 }
+	 if score > randomNum {
+		lossCount++
+		randomNum = []
+	 }
+
+Each crystal represents a number, each time crystal is clicked, add that many points to your total score. Crystals have random number selected from 1 - 12
+
+When your total score is matched with the random selected number, scoreboard will appear you win! and win increment by 1, random number will then reset, and total score will reset to 0
+
+When Your total score is over the random selected amount, scoreboard will appear you lost! and losses will increment by 1, random number will reset, and total score will reset
+-->
+
+<script src="assets/javascript/game.js"></script>
+
+
+
+</body>
+</html>

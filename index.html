@@ -32,62 +32,42 @@
 
 <br>
 
-<div id="randomNumber">
-	<span id="randNum">0</span>
-</div>
+<div id="container">
+	<div id="randomNumber">
+		<span id="randNum">0</span>
+	</div>
+	<div id="scoreboard">
+		Wins: <span id="winsCounter">0</span>
+		Losses: <span id ="lossesCounter">0</span>
+		<span id="winLose"></span>
+	</div>
 
-<div id="scoreboard">
-	Wins: <span id="winsCounter">0</span>
-	Losses: 0 <span id ="lossesCounter">0</span>
 </div>
 
 <br>
 
 <div id="container">
-	<img src="assets/images/ruby.jpg" alt="ruby" width="15%" height="15%" />
-	<img src="assets/images/diamond.png" alt="diamond" width="15%" height="15%" />
-	<img src="assets/images/citrine.jpg" alt="citrine" width="15%" height="15%" />
-	<img src="assets/images/emerald.jpg" alt="emerald" width="15%" height="15%" />
+	<img src="assets/images/ruby.jpg" alt="ruby" width="15%" height="15%" id="ruby"/>
+	<img src="assets/images/diamond.png" alt="diamond" width="15%" height="15%" id="diamond"/>
+	<img src="assets/images/citrine.jpg" alt="citrine" width="15%" height="15%" id="citrine"/>
+	<img src="assets/images/emerald.jpg" alt="emerald" width="15%" height="15%" id="emerald"/>
 </div>
 
 <br>
 
-<div id="scoreTitle">
-	Your total score is:
-</div>
-
-<br>
-
-<div id="score">
-	<span id="totalScore">0</span>
+<div id="container">
+		<div id="scoreTitle">
+			Your total score is:
+		</div>
+	<br>
+		<div id="score">
+			<span id="totalCount">0</span>
+		</div>
 </div>
 
 <!--
 Background image
-10 separate divs
-	1. CrystalsCollector! Title Box (Static)
-	2. Instructions and rules div (Static)
-	3. random number generated div (Between #19-120)
-		- var randomNumber = 0;
-		- Math.floor(Math.random() * 102 + 19);
-	4. Scoreboard Wins: 0 and Losses: 0  div
-		-var Wins: 0;
-		-var Losses: 0;
-	5. Ruby image (or div?)
-		On click,
-		-Math.floor(Math.random() * 12 + 1);
-		add randNum to yourTotalscore
-	6. Diamond image (or div?)
-		On click
-		-Math.floor(Math.random() * 12 + 1);
-		add randNum to yourTotalScore
-	7. Gold image (or div?)
-		OnClick
-		-Math.floor(Math.random() * 12 + 1);
-		add randNum to your total score
-	8. Emerald image (or div?)
-		-Math.floor(Math.random() * 12 + 1);
-		add randNum to your totalScore
+10 separate div
 	9. Your total score is: (div) (Static)
 	10. Score div
 		-Var yourTotalScore 

@@ -55,18 +55,13 @@ function startGame() {
 		roundComplete();
 	})
 
-// How do I get my totalscore to update on HTML
 	document.getElementById("totalCount").innerHTML = totalScore; // For when first sets up
 	document.getElementById("randNum").innerHTML = randomNum;
 	
-	console.log("Hello");
 }
 
-// How do i make this update when round is complete, rather than at the beginning?
 function roundComplete() {
 
-// Wincount and loss count does not update once, score is higher or equal to, just keeps going 
-// How do i make you win/you lose alert only in scoreboard div, only visible after win/loss
 	if (totalScore === randNum) {
 		winCount++;
 		document.getElementById("winLose").innerHTML = "You Win" ;
@@ -83,6 +78,5 @@ function roundComplete() {
 }
 
 startGame();
-
 
 })
